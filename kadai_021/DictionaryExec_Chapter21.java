@@ -7,10 +7,9 @@ public class DictionaryExec_Chapter21 {
 		 
 		 String[] targetWords = {"apple","banana","grape","orange"};
 		 
-		 for(String target:targetWords) {
+		
 			 
-			 dictionary.findWord(target);
-		 }
+			 dictionary.findWord(targetWords);
 		 
 		 
 	 }
