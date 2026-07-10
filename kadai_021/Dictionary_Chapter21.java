@@ -8,7 +8,7 @@ public class Dictionary_Chapter21 {
 	public Dictionary_Chapter21() {
 		
 		String[] EnglihsWords = {"apple","peach","banana","lemon","pear","kiwi","strawberry","grape","muscat","cherry"};
-		String[] JapaneseWords = {"りんご","桃","バナナ","レモン ","  梨 ","キウィ"," いちご ","ぶどう","マスカット","さくらんぼ"};
+		String[] JapaneseWords = {"りんご","桃","バナナ","レモン ","梨 ","キウィ"," いちご ","ぶどう","マスカット","さくらんぼ"};
 		for(int i=0; i < EnglihsWords.length ; i++) {
 			this.words.put(EnglihsWords[i] , JapaneseWords[i]);
 		}
@@ -23,6 +23,18 @@ public class Dictionary_Chapter21 {
 			 System.out.println(targetWord + "は辞書に存在しません");
 		 }
 	}
+	
+	public void findWord(String[] targetWords) {
+		for(String targetWord:targetWords) {
+			 
+			if(words.get(targetWord) != null) {
+				 System.out.println(targetWord + "の意味は" + words.get(targetWord));
+			 }else {
+				 System.out.println(targetWord + "は辞書に存在しません");
+			 }
+		 }
+	}
+
 	
 
 }
